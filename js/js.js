@@ -1,7 +1,7 @@
-function fetchUserInfo() {
+function fetchUserInfo(access_token) {
 	//return youraccess_token = access_token;
-	//var userVal = url('https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=youraccess_token');
-	//console.log(userVal);
+	var userVal = url('https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=access_token');
+	console.log(userVal);
 }
 
 function showLanding() {
@@ -17,7 +17,7 @@ function signinCallback(authResult) {
 		document.getElementById('signinButton').setAttribute('style', 'display: none');
 		console.log(authResult);
 
-		fetchUserInfo();
+		fetchUserInfo(authResult.access_token);
 
 		showLanding();
 
