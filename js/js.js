@@ -1,5 +1,6 @@
 function greet(result){
 	$('#uName').text(result.given_name);
+	$('#pic img').attr(src,result.picture)
 	$('#greet').show();
 }
 
