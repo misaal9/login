@@ -1,4 +1,3 @@
-$(document).ready(function(){
 	function signinCallback(authResult) {
 	if (authResult['status']['signed_in']) {
 		// Update the app to reflect a signed in user
@@ -12,5 +11,7 @@ $(document).ready(function(){
 		//   "immediate_failed" - Could not automatically log in the user
 		console.log('Sign-in state: ' + authResult['error']);
 	}
+	alert('in');
+$(document).ready(function(){
 }
 });
