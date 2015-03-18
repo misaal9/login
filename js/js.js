@@ -1,9 +1,15 @@
+function greet(result){
+	$('#uName').text(result.given_name);
+	$('#greet').show();
+}
+
 function fetchUserInfo(access_token) {
 	//return youraccess_token = access_token;
 	var url = 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token='+access_token;
 	//console.log(userVal);*/
 
 	$.getJSON(url, function(result){
+		greet(result);
 		console.log(result);
 	});
 }
