@@ -6,7 +6,7 @@ function fetchUserInfo(access_token) {
 	var newT = $.ajax({
 		datatype: 'json',
 		url: 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token='+access_token,
-		data: data,
+		//data: data,
 		success: success
 	});
 	console.log(newT);
