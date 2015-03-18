@@ -1,6 +1,6 @@
 function fetchUserInfo(access_token) {
 	//return youraccess_token = access_token;
-	var userVal = url('https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=access_token');
+	var userVal = https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=access_token;
 	console.log(userVal);
 }
 
