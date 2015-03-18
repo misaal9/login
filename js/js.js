@@ -1,7 +1,7 @@
 function fetchUserInfo() {
 	//return youraccess_token = access_token;
-	var userVal = url('https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=youraccess_token');
-	console.log(userVal);
+	//var userVal = url('https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=youraccess_token');
+	//console.log(userVal);
 }
 
 function showLanding() {
