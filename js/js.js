@@ -1,3 +1,14 @@
+function fetchUserInfo() {
+	return youraccess_token = access_token;
+	var userVal = url('https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=youraccess_token');
+	console.log(userVal);
+}
+
+function showLanding() {
+	$('#login').slideUp('fast', function(){
+		$('#landing').slideDown('fast');
+	});
+}
 
 function signinCallback(authResult) {
 	if (authResult['status']['signed_in']) {
@@ -5,6 +16,8 @@ function signinCallback(authResult) {
 		// Hide the sign-in button now that the user is authorized, for example:
 		document.getElementById('signinButton').setAttribute('style', 'display: none');
 		console.log(authResult);
+
+		fetchUserInfo();
 
 		showLanding();
 
@@ -16,10 +29,4 @@ function signinCallback(authResult) {
 		//   "immediate_failed" - Could not automatically log in the user
 		console.log('Sign-in state: ' + authResult['error']);
 	}
-}
-
-function showLanding() {
-	$('#login').slideUp('fast', function(){
-		$('#landing').slideDown('fast');
-	});
 }
