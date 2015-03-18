@@ -5,41 +5,37 @@
 	<meta name='viewport' content='width= device-width, initial-scale=1.0' />
 	<link rel='stylesheet' href='css/bootstrap-3.0.3.min.css'>
 	<link rel='stylesheet' href='css/style.css'>
-	<script>
-		function signinCallback(authResult) {
-			if (authResult['status']['signed_in']) {
-				// Update the app to reflect a signed in user
-				// Hide the sign-in button now that the user is authorized, for example:
-				document.getElementById('signinButton').setAttribute('style', 'display: none');
-				alert('You are now logged in!');
-				console.log(authResult);
-			} else {
-				// Update the app to reflect a signed out user
-				// Possible error values:
-				//   "user_signed_out" - User is signed-out
-				//   "access_denied" - User denied access to your app
-				//   "immediate_failed" - Could not automatically log in the user
-				console.log('Sign-in state: ' + authResult['error']);
-			}
-		}
-	</script>
+	<script src='js/js.js'></script>
 </head>
 <body>
-	<div class='container'>
+	<div id='login' class='container'>
+		<div class='row icebreaker'>Login to see more</div>
 		<div class='row'>
 			<div class='col-xs-12'>
-				<span id="signinButton">
-					<span
-						class="g-signin"
-						data-callback="signinCallback"
-						data-clientid="181093596177-615ikp5kjhh3nsket4cdf43s1jfd91e5.apps.googleusercontent.com"
-						data-cookiepolicy="single_host_origin"
-						data-requestvisibleactions="http://schema.org/AddAction"
-						data-scope="https://www.googleapis.com/auth/plus.login">
+				<div class='center'>
+					<span id="signinButton">
+						<span
+							class="g-signin"
+							data-callback="signinCallback"
+							data-clientid="181093596177-615ikp5kjhh3nsket4cdf43s1jfd91e5.apps.googleusercontent.com"
+							data-cookiepolicy="single_host_origin"
+							data-requestvisibleactions="http://schema.org/AddAction"
+							data-scope="https://www.googleapis.com/auth/plus.login">
+						</span>
 					</span>
-				</span>
+				</div>
 			</div>
 		</div>
+	</div>
+
+	<div id='landing' class='container'>
+		<div class='row icebreaker'>
+			<div class='col-xs-12 center'><span>Take a look around</span></div>
+		</div>
+		<div class='row center'>
+			<span>Bunch of stuff comes here</span>
+		</div>
+
 	</div>
 
 
@@ -54,7 +50,6 @@
 	<script src='js/jquery-2.1.0.min.js'></script>
 	<script src='js/bootstrap-3.0.3.min.js'></script>
 	<script src="https://apis.google.com/js/client:platform.js" async defer></script>
-	<script src='js/js.js'></script>
 </body>
 
 </html>
