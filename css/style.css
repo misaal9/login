@@ -34,11 +34,13 @@ div#landing {
 #landing div.icebreaker {
 	font-size: 2em;
 	text-align: center;
-	margin-top: 10%;
 	margin-bottom: 5%;
 }
+#login {
+	display: none;
+}
 #landing div#greet {
-  display: none;
+  /*display: none;*/
   margin: 5% 0;
   font-size: 1.5em;
 }
@@ -46,4 +48,14 @@ div#pic img {
   border-radius: 100px;
   max-width: 100px;
   border: 2px solid #fff;
+}
+div.row.info {
+  margin: 20px 0;
+}
+div.infoBox {
+  border: 1px solid #fff;
+  height: 180px;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
