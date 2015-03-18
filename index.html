@@ -11,7 +11,16 @@
 		<div class='row'>
 			<div class='col-xs-12'>
 				<span>Sign On</span>
-				<button id='signin' class='btn btn-default'>Sign In</button>
+				<span id="signinButton">
+					<span
+						class="g-signin"
+						data-callback="signinCallback"
+						data-clientid="181093596177-615ikp5kjhh3nsket4cdf43s1jfd91e5.apps.googleusercontent.com"
+						data-cookiepolicy="single_host_origin"
+						data-requestvisibleactions="http://schema.org/AddAction"
+						data-scope="profile">
+					</span>
+				</span>
 			</div>
 		</div>
 	</div>
@@ -27,6 +36,7 @@
 
 	<script src='js/jquery-2.1.0.min.js'></script>
 	<script src='js/bootstrap-3.0.3.min.js'></script>
+	<script src="https://apis.google.com/js/client:platform.js" async defer></script>
 	<script src='js/js.js'></script>
 </body>
 
