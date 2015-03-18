@@ -7,7 +7,7 @@ function fetchUserInfo(access_token) {
 		datatype: 'json',
 		url: 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token='+access_token,
 		//data: data,
-		success: success
+		//success: success
 	});
 	console.log(newT);
 }
