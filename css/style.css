@@ -55,7 +55,7 @@ div.row.info {
 div.infoBox {
   border: 1px solid #fff;
   height: 180px;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 15px;
   margin-bottom: 20px;
 }
