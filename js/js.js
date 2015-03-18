@@ -1,15 +1,12 @@
 function fetchUserInfo(access_token) {
 	//return youraccess_token = access_token;
-	/*var userVal = 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token='+access_token;
-	console.log(userVal);*/
+	var url = 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token='+access_token;
+	//console.log(userVal);*/
 
-	var newT = $.ajax({
-		datatype: 'json',
-		url: 'https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token='+access_token,
-		//data: data,
-		//success: success
+	getJSON(url, function(result){
+		console.log(result);
 	});
-	console.log(newT);
+
 }
 
 function showLanding() {
