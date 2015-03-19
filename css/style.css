@@ -36,9 +36,6 @@ div#landing {
 	text-align: center;
 	margin-bottom: 5%;
 }
-#login {
-	display: none;
-}
 #landing div#greet {
   display: none;
   margin: 5% 0;
