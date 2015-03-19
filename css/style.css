@@ -40,7 +40,7 @@ div#landing {
 	display: none;
 }
 #landing div#greet {
-  /*display: none;*/
+  display: none;
   margin: 5% 0;
   font-size: 1.5em;
 }
